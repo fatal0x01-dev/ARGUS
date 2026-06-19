@@ -1,0 +1,152 @@
+2026-06-02 21:54:10  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-02 21:54:10  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-02 21:54:10  INFO      tasks.task_manager              Loaded 0 pending task(s) from previous session
+2026-06-02 21:54:10  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-02 21:54:10  INFO      executor.executor               Executor ready — http://localhost:1234/v1  model=qwen2.5-7b-instruct-uncensored
+2026-06-02 21:54:10  INFO      __main__                        ============================================================
+2026-06-02 21:54:10  INFO      __main__                        ORCHESTRATOR START
+2026-06-02 21:54:10  INFO      __main__                        Goal: update the machine - run system checks.
+2026-06-02 21:54:10  INFO      __main__                        ============================================================
+2026-06-02 21:54:10  INFO      __main__                        Checking executor availability...
+2026-06-02 21:54:12  INFO      __main__                        Executor: OK
+2026-06-02 21:54:12  INFO      __main__                        --------------------------------------------------
+2026-06-02 21:54:12  INFO      __main__                        Iteration 1 / 50
+2026-06-02 21:54:34  INFO      planner.planner                 Planner action: create_tasks
+2026-06-02 21:54:34  INFO      tasks.task_manager              Queued  Task(1234567890) [PENDING] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:54:34  INFO      tasks.task_manager              Queued  Task(1234567891) [PENDING] priority=2 retries=0 | Scan disk space for free space issues
+2026-06-02 21:54:34  INFO      tasks.task_manager              Running Task(1234567890) [RUNNING] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:54:34  INFO      executor.executor               Executing task 1234567890: Check system logs for errors
+2026-06-02 21:54:41  INFO      executor.executor               Executor result for 1234567890: status=completed
+2026-06-02 21:54:41  INFO      tasks.task_manager              Done    Task(1234567890) [COMPLETED] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:54:41  INFO      __main__                        --------------------------------------------------
+2026-06-02 21:54:41  INFO      __main__                        Iteration 2 / 50
+2026-06-02 21:55:08  INFO      planner.planner                 Planner action: create_tasks
+2026-06-02 21:55:08  INFO      tasks.task_manager              Queued  Task(unique_id) [PENDING] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:55:08  INFO      tasks.task_manager              Queued  Task(unique_id) [PENDING] priority=1 retries=0 | Scan disk space for free space issues
+2026-06-02 21:55:08  INFO      tasks.task_manager              Running Task(unique_id) [RUNNING] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:55:08  INFO      executor.executor               Executing task unique_id: Check system logs for errors
+2026-06-02 21:55:15  WARNING   executor.executor               Executor returned non-JSON for task unique_id — treating as result text
+2026-06-02 21:55:15  INFO      tasks.task_manager              Done    Task(unique_id) [COMPLETED] priority=1 retries=0 | Check system logs for errors
+2026-06-02 21:55:15  INFO      __main__                        --------------------------------------------------
+2026-06-02 21:55:15  INFO      __main__                        Iteration 3 / 50
+2026-06-02 21:55:37  INFO      planner.planner                 Planner action: create_tasks
+2026-06-02 21:55:37  INFO      tasks.task_manager              Queued  Task(1234567891) [PENDING] priority=2 retries=0 | Check system logs for errors
+2026-06-02 21:55:37  INFO      tasks.task_manager              Queued  Task(unique_id) [PENDING] priority=1 retries=0 | Scan disk space for free space issues
+2026-06-02 21:55:37  INFO      tasks.task_manager              Running Task(unique_id) [RUNNING] priority=1 retries=0 | Scan disk space for free space issues
+2026-06-02 21:55:37  INFO      executor.executor               Executing task unique_id: Scan disk space for free space issues
+2026-06-02 21:55:41  INFO      executor.executor               Executor result for unique_id: status=completed
+2026-06-02 21:55:41  INFO      tasks.task_manager              Done    Task(unique_id) [COMPLETED] priority=1 retries=0 | Scan disk space for free space issues
+2026-06-02 21:55:41  INFO      __main__                        --------------------------------------------------
+2026-06-02 21:55:41  INFO      __main__                        Iteration 4 / 50
+2026-06-02 21:55:48  INFO      planner.planner                 Planner action: goal_complete
+2026-06-02 21:55:48  INFO      __main__                        ============================================================
+2026-06-02 21:55:48  INFO      __main__                        GOAL COMPLETE after 4 iterations (98.9s)
+2026-06-02 21:55:48  INFO      __main__                        Message: System checks completed successfully
+2026-06-02 21:55:48  INFO      __main__                        ============================================================
+2026-06-03 04:56:31  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-03 04:56:31  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-03 04:56:31  INFO      tasks.task_manager              Loaded 1 pending task(s) from previous session
+2026-06-03 04:56:31  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-03 04:56:31  INFO      executor.executor               Executor ready — http://localhost:1234/v1 model=qwen2.5-7b-instruct-uncensored
+2026-06-03 04:56:31  INFO      __main__                        ============================================================
+2026-06-03 04:56:31  INFO      __main__                        ORCHESTRATOR START
+2026-06-03 04:56:31  INFO      __main__                        Goal: run system checks
+2026-06-03 04:56:31  INFO      __main__                        ============================================================
+2026-06-03 04:56:31  INFO      __main__                        Checking executor availability...
+2026-06-03 04:56:33  INFO      __main__                        Executor: OK
+2026-06-03 04:56:33  INFO      __main__                        Resuming session — 1 pending task(s) in queue
+2026-06-03 04:56:33  INFO      __main__                        --------------------------------------------------
+2026-06-03 04:56:33  INFO      __main__                        Iteration 1 / 50
+2026-06-03 04:57:06  WARNING   __main__                        Interrupted by user — state saved, resume any time.
+2026-06-03 04:57:27  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-03 04:57:27  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-03 04:57:27  INFO      tasks.task_manager              Loaded 1 pending task(s) from previous session
+2026-06-03 04:57:27  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-03 04:57:27  INFO      executor.executor               Executor ready — http://localhost:1234/v1 model=qwen2.5-7b-instruct-uncensored
+2026-06-03 04:57:27  INFO      __main__                        ============================================================
+2026-06-03 04:57:27  INFO      __main__                        ORCHESTRATOR START
+2026-06-03 04:57:27  INFO      __main__                        Goal: run system checks
+2026-06-03 04:57:27  INFO      __main__                        ============================================================
+2026-06-03 04:57:27  INFO      __main__                        Checking executor availability...
+2026-06-03 04:57:29  INFO      __main__                        Executor: OK
+2026-06-03 04:57:29  INFO      __main__                        Resuming session — 1 pending task(s) in queue
+2026-06-03 04:57:29  INFO      __main__                        --------------------------------------------------
+2026-06-03 04:57:29  INFO      __main__                        Iteration 1 / 50
+2026-06-03 04:57:34  INFO      planner.planner                 Planner action: goal_complete
+2026-06-03 04:57:34  INFO      __main__                        ============================================================
+2026-06-03 04:57:34  INFO      __main__                        GOAL COMPLETE after 1 iterations (6.9s)
+2026-06-03 04:57:34  INFO      __main__                        Message: System checks completed successfully
+2026-06-03 04:57:34  INFO      __main__                        ============================================================
+2026-06-03 04:59:03  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-03 04:59:03  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-03 04:59:03  INFO      tasks.task_manager              Loaded 1 pending task(s) from previous session
+2026-06-03 04:59:03  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-03 04:59:03  INFO      executor.executor               Executor ready — http://localhost:1234/v1 model=qwen2.5-7b-instruct-uncensored
+2026-06-03 04:59:03  INFO      __main__                        ============================================================
+2026-06-03 04:59:03  INFO      __main__                        ORCHESTRATOR START
+2026-06-03 04:59:03  INFO      __main__                        Goal: install ssh server and configure to listen on 127.0.0.1:9999
+2026-06-03 04:59:03  INFO      __main__                        ============================================================
+2026-06-03 04:59:03  INFO      __main__                        Checking executor availability...
+2026-06-03 04:59:06  INFO      __main__                        Executor: OK
+2026-06-03 04:59:06  INFO      __main__                        Resuming session — 1 pending task(s) in queue
+2026-06-03 04:59:06  INFO      __main__                        --------------------------------------------------
+2026-06-03 04:59:06  INFO      __main__                        Iteration 1 / 50
+2026-06-03 04:59:24  INFO      planner.planner                 Planner action: create_tasks
+2026-06-03 04:59:24  INFO      tasks.task_manager              Queued  Task(unique_id) [PENDING] priority=1 retries=0 | Install ssh server and configure to listen on 127.0.0.1:9999
+2026-06-03 04:59:24  INFO      tasks.task_manager              Queued  Task(1234567891) [PENDING] priority=1 retries=0 | Check system logs for errors
+2026-06-03 04:59:24  INFO      tasks.task_manager              Running Task(unique_id) [RUNNING] priority=1 retries=0 | Install ssh server and configure to listen on 127.0.0.1:9999
+2026-06-03 04:59:24  INFO      executor.executor               Executing task unique_id: Install ssh server and configure to listen on 127.0.0.1:9999
+2026-06-03 04:59:24  INFO      utils.lmstudio_client           LMStudio MCP request -> model=qwen2.5-7b-instruct-uncensored integrations=[{'type': 'plugin', 'id': 'mcp/mcp-docker'}]
+2026-06-03 04:59:26  WARNING   executor.executor               No assistant message found in MCP response for task unique_id
+2026-06-03 04:59:26  WARNING   tasks.task_manager              Retry   Task(unique_id) [PENDING] priority=1 retries=1 | Install ssh server and configure to listen on 127.0.0.1:9999 (attempt 1)
+2026-06-03 04:59:26  INFO      __main__                        --------------------------------------------------
+2026-06-03 04:59:26  INFO      __main__                        Iteration 2 / 50
+2026-06-03 04:59:49  WARNING   __main__                        Interrupted by user — state saved, resume any time.
+2026-06-03 05:06:19  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-03 05:06:19  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-03 05:06:19  INFO      tasks.task_manager              Loaded 2 pending task(s) from previous session
+2026-06-03 05:06:19  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-03 05:06:19  INFO      executor.executor               Executor ready — http://localhost:1234 model=qwen2.5-7b-instruct-uncensored
+2026-06-03 05:06:19  INFO      __main__                        ============================================================
+2026-06-03 05:06:19  INFO      __main__                        ORCHESTRATOR START
+2026-06-03 05:06:19  INFO      __main__                        Goal: run system updates
+2026-06-03 05:06:19  INFO      __main__                        ============================================================
+2026-06-03 05:06:19  INFO      __main__                        Checking executor availability...
+2026-06-03 05:06:21  INFO      __main__                        Executor: OK
+2026-06-03 05:06:21  INFO      __main__                        Resuming session — 2 pending task(s) in queue
+2026-06-03 05:06:21  INFO      __main__                        --------------------------------------------------
+2026-06-03 05:06:21  INFO      __main__                        Iteration 1 / 50
+2026-06-03 05:06:36  INFO      planner.planner                 Planner action: goal_failed
+2026-06-03 05:06:36  INFO      __main__                        ============================================================
+2026-06-03 05:06:36  INFO      __main__                        GOAL FAILED after 1 iterations (17.7s)
+2026-06-03 05:06:36  INFO      __main__                        Message: Failed to install ssh server and configure it to listen on 127.0.0.1:9999. Reason: Task 1234567891 failed to check system logs for errors.
+2026-06-03 05:06:36  INFO      __main__                        ============================================================
+2026-06-03 05:07:02  INFO      memory.task_store               TaskStore opened: D:\AI\Orchestrator\data\task_history.db
+2026-06-03 05:07:02  INFO      memory.rag_store                RAGStore: disabled (Phase 1 stub). Enable in Phase 3.
+2026-06-03 05:07:02  INFO      tasks.task_manager              Loaded 2 pending task(s) from previous session
+2026-06-03 05:07:02  INFO      planner.planner                 Planner ready — http://10.10.10.106:1234/v1  model=mistral-7b-instruct-v0.1
+2026-06-03 05:07:02  INFO      executor.executor               Executor ready — http://localhost:1234 model=qwen2.5-7b-instruct-uncensored
+2026-06-03 05:07:02  INFO      __main__                        ============================================================
+2026-06-03 05:07:02  INFO      __main__                        ORCHESTRATOR START
+2026-06-03 05:07:02  INFO      __main__                        Goal: check system health
+2026-06-03 05:07:02  INFO      __main__                        ============================================================
+2026-06-03 05:07:02  INFO      __main__                        Checking executor availability...
+2026-06-03 05:07:04  INFO      __main__                        Executor: OK
+2026-06-03 05:07:04  INFO      __main__                        Resuming session — 2 pending task(s) in queue
+2026-06-03 05:07:04  INFO      __main__                        --------------------------------------------------
+2026-06-03 05:07:04  INFO      __main__                        Iteration 1 / 50
+2026-06-03 05:07:24  INFO      planner.planner                 Planner action: create_tasks
+2026-06-03 05:07:24  INFO      tasks.task_manager              Queued  Task(unique_id) [PENDING] priority=1 retries=0 | Install ssh server and configure to listen on 127.0.0.1:9999
+2026-06-03 05:07:24  INFO      tasks.task_manager              Queued  Task(1234567891) [PENDING] priority=2 retries=0 | Check system logs for errors
+2026-06-03 05:07:24  INFO      tasks.task_manager              Running Task(1234567891) [RUNNING] priority=1 retries=0 | Check system logs for errors
+2026-06-03 05:07:24  INFO      executor.executor               Executing task 1234567891: Check system logs for errors
+2026-06-03 05:07:24  INFO      utils.lmstudio_client           LMStudio MCP request -> model=qwen2.5-7b-instruct-uncensored integrations=[{'type': 'plugin', 'id': 'mcp/mcp-docker'}]
+2026-06-03 05:08:05  INFO      executor.executor               Executor result for 1234567891: status=failed
+2026-06-03 05:08:05  WARNING   tasks.task_manager              Retry   Task(1234567891) [PENDING] priority=1 retries=1 | Check system logs for errors (attempt 1)
+2026-06-03 05:08:05  INFO      __main__                        --------------------------------------------------
+2026-06-03 05:08:05  INFO      __main__                        Iteration 2 / 50
+2026-06-03 05:08:12  INFO      planner.planner                 Planner action: goal_complete
+2026-06-03 05:08:12  INFO      __main__                        ============================================================
+2026-06-03 05:08:12  INFO      __main__                        GOAL COMPLETE after 2 iterations (69.9s)
+2026-06-03 05:08:12  INFO      __main__                        Message: System health check completed successfully.
+2026-06-03 05:08:12  INFO      __main__                        ============================================================
